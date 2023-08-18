@@ -1,4 +1,6 @@
 .nav_modal_wrapper {
+  display: none;
+
   @include respond-to("lg") {
     position: fixed;
     top: 28%;
@@ -46,13 +48,19 @@
     .sub_nav_item_wrapper {
       display: grid;
       grid-template-columns: auto auto auto;
-      padding: 12px;
 
       .sub_nav_item {
         display: flex;
         align-items: center;
         font-size: 14px;
         margin: 6px;
+        padding: 4px 18px;
+        border-radius: 50px;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(78, 78, 78, 0.219);
+          transition: all 0.3s;
+        }
 
         .icon_wrapper {
           font-size: 30px;

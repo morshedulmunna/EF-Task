@@ -31,22 +31,22 @@
             </div>
 
             <ul class="nav_item">
-              <li class="nav_link">
+              <li class="nav_link" data-tab="tab1">
                 <i class="fa-solid fa-laptop"></i>
                 <span>PC</span>
                 <i class="fa-solid fa-angle-down"></i>
               </li>
-              <li class="nav_link">
+              <li class="nav_link" data-tab="tab2">
                 <i class="fa-brands fa-playstation"></i>
                 <span>Playstation</span>
                 <i class="fa-solid fa-angle-down"></i>
               </li>
-              <li class="nav_link">
+              <li class="nav_link" data-tab="tab3">
                 <i class="fa-brands fa-xbox"></i>
                 <span>Xbox</span>
                 <i class="fa-solid fa-angle-down"></i>
               </li>
-              <li class="nav_link">
+              <li class="nav_link" data-tab="tab4">
                 <i class="fa-brands fa-delicious"></i>
                 <span>Nintendo </span>
                 <i class="fa-solid fa-angle-down"></i>
@@ -78,87 +78,411 @@
       <!-- /*=============================================
       =            Nav Modal            =
       =============================================*/ -->
-      <div class="nav_modal_wrapper">
+      <!-- tab-1 -->
+      <div id="tab1" class="nav_modal_wrapper tab">
         <!-- Component One -->
         <div class="nav_modal_container">
-          <div class="nav_modal_header">
-            <p>Platforms</p>
-            <a href="#">View all</a>
+          <div>
+            <div class="nav_modal_header">
+              <p>Platforms</p>
+              <a href="#">View all</a>
+            </div>
+            <div class="sub_nav_item_wrapper">
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-steam" style="color: #113779"></i>
+                </div>
+                <p>Steam</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-uncharted" style="color: #00a4eb"></i>
+                </div>
+                <p>Ubisoft Connect</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i
+                    class="fa-brands fa-app-store-ios"
+                    style="color: #ff7300"
+                  ></i>
+                </div>
+                <p>EA App</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-slack" style="color: #10b292"></i>
+                </div>
+                <p>Slack</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i
+                    class="fa-solid fa-shuttle-space"
+                    style="color: #ffea05"
+                  ></i>
+                </div>
+                <p>Rocket</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-joomla" style="color: #9400bd"></i>
+                </div>
+                <p>Jommla</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-windows" style="color: #0011ff"></i>
+                </div>
+                <p>Windows</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-solid fa-city" style="color: #e894ff"></i>
+                </div>
+                <p>City</p>
+              </div>
+              <!--  -->
+            </div>
           </div>
-          <div class="sub_nav_item_wrapper">
-            <!-- One -->
-            <div class="sub_nav_item">
-              <div class="icon_wrapper">
-                <i class="fa-brands fa-steam" style="color: #113779"></i>
-              </div>
-              <p>Steam</p>
+
+          <!-- div -->
+          <div>
+            <div class="nav_modal_header">
+              <p>Prepaid Card</p>
+              <a href="#">View all</a>
             </div>
-            <!--  -->
-            <!-- One -->
-            <div class="sub_nav_item">
-              <div class="icon_wrapper">
-                <i class="fa-brands fa-uncharted" style="color: #00a4eb"></i>
+            <div class="sub_nav_item_wrapper">
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-steam" style="color: #113779"></i>
+                </div>
+                <p>Steam</p>
               </div>
-              <p>Ubisoft Connect</p>
-            </div>
-            <!--  -->
-            <!-- One -->
-            <div class="sub_nav_item">
-              <div class="icon_wrapper">
-                <i
-                  class="fa-brands fa-app-store-ios"
-                  style="color: #ff7300"
-                ></i>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-uncharted" style="color: #00a4eb"></i>
+                </div>
+                <p>Ubisoft Connect</p>
               </div>
-              <p>EA App</p>
-            </div>
-            <!--  -->
-            <!-- One -->
-            <div class="sub_nav_item">
-              <div class="icon_wrapper">
-                <i class="fa-brands fa-slack" style="color: #10b292"></i>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i
+                    class="fa-brands fa-app-store-ios"
+                    style="color: #ff7300"
+                  ></i>
+                </div>
+                <p>EA App</p>
               </div>
-              <p>Slack</p>
-            </div>
-            <!--  -->
-            <!-- One -->
-            <div class="sub_nav_item">
-              <div class="icon_wrapper">
-                <i class="fa-solid fa-shuttle-space" style="color: #ffea05"></i>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-slack" style="color: #10b292"></i>
+                </div>
+                <p>Slack</p>
               </div>
-              <p>Rocket</p>
+              <!--  -->
             </div>
-            <!--  -->
-            <!-- One -->
-            <div class="sub_nav_item">
-              <div class="icon_wrapper">
-                <i class="fa-brands fa-joomla" style="color: #9400bd"></i>
-              </div>
-              <p>Jommla</p>
-            </div>
-            <!--  -->
-            <!-- One -->
-            <div class="sub_nav_item">
-              <div class="icon_wrapper">
-                <i class="fa-brands fa-windows" style="color: #0011ff"></i>
-              </div>
-              <p>Windows</p>
-            </div>
-            <!--  -->
-            <!-- One -->
-            <div class="sub_nav_item">
-              <div class="icon_wrapper">
-                <i class="fa-solid fa-city" style="color: #e894ff"></i>
-              </div>
-              <p>City</p>
-            </div>
-            <!--  -->
           </div>
         </div>
       </div>
-      <!-- /*=====  End of Nav Modal  ======*/ -->
+      <!-- Tab-2 -->
+      <div id="tab2" class="nav_modal_wrapper tab">
+        <!-- Component One -->
+        <div class="nav_modal_container">
+          <div>
+            <div class="nav_modal_header">
+              <p>Platforms</p>
+              <a href="#">View all</a>
+            </div>
+            <div class="sub_nav_item_wrapper">
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-steam" style="color: #113779"></i>
+                </div>
+                <p>Steam</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-uncharted" style="color: #00a4eb"></i>
+                </div>
+                <p>Ubisoft Connect</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i
+                    class="fa-brands fa-app-store-ios"
+                    style="color: #ff7300"
+                  ></i>
+                </div>
+                <p>EA App</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-slack" style="color: #10b292"></i>
+                </div>
+                <p>Slack</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i
+                    class="fa-solid fa-shuttle-space"
+                    style="color: #ffea05"
+                  ></i>
+                </div>
+                <p>Rocket</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-joomla" style="color: #9400bd"></i>
+                </div>
+                <p>Jommla</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-brands fa-windows" style="color: #0011ff"></i>
+                </div>
+                <p>Windows</p>
+              </div>
+              <!--  -->
+              <!-- One -->
+              <div class="sub_nav_item">
+                <div class="icon_wrapper">
+                  <i class="fa-solid fa-city" style="color: #e894ff"></i>
+                </div>
+                <p>City</p>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+     
+          <!-- tab-3 -->
+          <div id="tab3" class="nav_modal_wrapper tab">
+            <!-- Component One -->
+            <div class="nav_modal_container">
+              <div>
+                <div class="nav_modal_header">
+                  <p>Platforms</p>
+                  <a href="#">View all</a>
+                </div>
+                <div class="sub_nav_item_wrapper">
+                
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i class="fa-brands fa-uncharted" style="color: #00a4eb"></i>
+                    </div>
+                    <p>Ubisoft Connect</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i
+                        class="fa-brands fa-app-store-ios"
+                        style="color: #ff7300"
+                      ></i>
+                    </div>
+                    <p>EA App</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i class="fa-brands fa-slack" style="color: #10b292"></i>
+                    </div>
+                    <p>Slack</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i
+                        class="fa-solid fa-shuttle-space"
+                        style="color: #ffea05"
+                      ></i>
+                    </div>
+                    <p>Rocket</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i class="fa-brands fa-joomla" style="color: #9400bd"></i>
+                    </div>
+                    <p>Jommla</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i class="fa-brands fa-windows" style="color: #0011ff"></i>
+                    </div>
+                    <p>Windows</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i class="fa-solid fa-city" style="color: #e894ff"></i>
+                    </div>
+                    <p>City</p>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+    
+              <!-- div -->
+              <div>
+                <div class="nav_modal_header">
+                  <p>Prepaid Card</p>
+                  <a href="#">View all</a>
+                </div>
+                <div class="sub_nav_item_wrapper">
+                 
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i
+                        class="fa-brands fa-app-store-ios"
+                        style="color: #ff7300"
+                      ></i>
+                    </div>
+                    <p>EA App</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i class="fa-brands fa-slack" style="color: #10b292"></i>
+                    </div>
+                    <p>Slack</p>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tab-4 -->
+          <div id="tab4" class="nav_modal_wrapper tab">
+            <!-- Component One -->
+            <div class="nav_modal_container">
+              <div>
+                <div class="nav_modal_header">
+                  <p>Platforms</p>
+                  <a href="#">View all</a>
+                </div>
+                <div class="sub_nav_item_wrapper">
+               
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i class="fa-brands fa-uncharted" style="color: #00a4eb"></i>
+                    </div>
+                    <p>Ubisoft Connect</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i
+                        class="fa-brands fa-app-store-ios"
+                        style="color: #ff7300"
+                      ></i>
+                    </div>
+                    <p>EA App</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i class="fa-brands fa-slack" style="color: #10b292"></i>
+                    </div>
+                    <p>Slack</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i
+                        class="fa-solid fa-shuttle-space"
+                        style="color: #ffea05"
+                      ></i>
+                    </div>
+                    <p>Rocket</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i class="fa-brands fa-joomla" style="color: #9400bd"></i>
+                    </div>
+                    <p>Jommla</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i class="fa-brands fa-windows" style="color: #0011ff"></i>
+                    </div>
+                    <p>Windows</p>
+                  </div>
+                  <!--  -->
+                  <!-- One -->
+                  <div class="sub_nav_item">
+                    <div class="icon_wrapper">
+                      <i class="fa-solid fa-city" style="color: #e894ff"></i>
+                    </div>
+                    <p>City</p>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Middle content -->
+      </div>
+
+      <!-- 2nd Part -->
+      <div>
+        <p>Hello</p>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
