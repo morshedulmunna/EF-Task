@@ -1,0 +1,17 @@
+@import "./global";
+
+/*=============================================
+=            Global CSS            =
+=============================================*/
+
+body {
+  background-color: $jet;
+  color: $text-color;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+/*=====  End of Global CSS  ======*/
