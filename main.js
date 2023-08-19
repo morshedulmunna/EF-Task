@@ -34,3 +34,27 @@ document.addEventListener("click", (event) => {
     btn.classList.remove("active-tab");
   });
 });
+
+const searchInput = document.querySelector(".search");
+const searchIcon = document.querySelector(".search_Icon");
+
+searchIcon.addEventListener("click", () => {
+  searchInput.classList.toggle("active");
+});
+
+searchInput.addEventListener("keydown", (event) => {
+  if (event.keyCode === 13) {
+    // Enter key code
+    searchInput.classList.remove("active");
+  }
+});
+
+// Hide search input when clicking outside
+document.addEventListener("click", (event) => {
+  if (
+    !searchInput.contains(event.target) &&
+    !searchIcon.contains(event.target)
+  ) {
+    searchInput.classList.remove("active");
+  }
+});

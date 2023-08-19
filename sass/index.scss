@@ -14,4 +14,29 @@ body {
   margin: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 30px 50px;
+
+  @include respond-to("lg") {
+    width: 80%;
+    margin: auto;
+  }
+  @include respond-to("xl") {
+    width: 70%;
+    margin: auto;
+  }
+}
+
 /*=====  End of Global CSS  ======*/
