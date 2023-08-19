@@ -193,6 +193,7 @@
           overflow-x: hidden;
           overflow-y: auto;
           font-size: 14px;
+          z-index: 40;
 
           &.active_sidebar {
             right: 0%;
