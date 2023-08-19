@@ -131,10 +131,12 @@
       }
 
       .header_logo {
-        margin-top: 20px;
-
         img {
           width: 93px;
+        }
+
+        @include respond-to("xl") {
+          margin-top: 15px;
         }
       }
 
