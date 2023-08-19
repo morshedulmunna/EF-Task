@@ -131,13 +131,17 @@
       }
 
       .header_logo {
-        font-weight: 600;
-        font-size: 23px;
+        margin-top: 20px;
+
+        img {
+          width: 93px;
+        }
       }
 
       .header_right_icon_wrapper {
         @include mobile-first() {
           font-size: 18px;
+          white-space: nowrap;
         }
         i {
           color: #fff !important;
@@ -147,7 +151,6 @@
           }
           @include respond-to("lg") {
             font-size: 24px;
-            margin: 10px 0 0 20px;
             padding: 8px 8px;
             border-radius: 6px;
 
@@ -165,7 +168,7 @@
             cursor: pointer;
           }
 
-          @include respond-to("md") {
+          @include respond-to("lg") {
             display: none;
           }
         }
@@ -176,14 +179,63 @@
           position: absolute;
           top: 4rem;
           padding: 1rem;
-          height: 100vh;
+          height: 60vh;
           width: 50%;
-          right: 0;
-          background-color: rgb(10, 5, 36, 0.8);
+          right: -100%;
+          transition: all 0.3s;
+          backdrop-filter: blur(16px) saturate(180%);
+          -webkit-backdrop-filter: blur(16px) saturate(180%);
+          background-color: rgba(0, 0, 0, 0.411);
+          overflow-x: hidden;
+          overflow-y: auto;
+          font-size: 14px;
+
+          &.active_sidebar {
+            right: 0%;
+            transition: all 0.3s;
+          }
         }
 
-        @include respond-to("md") {
+        @include respond-to("lg") {
           display: none;
+        }
+
+        .nav_item_mobile {
+          list-style: none;
+          max-width: 450px;
+
+          .nav_link_mobile {
+            padding: 12px 0px;
+            position: relative;
+            overflow-x: hidden;
+
+            .main_item {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+            .sub-item {
+              list-style: circle;
+              padding-left: 20px;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.5s;
+              li {
+                padding: 6px;
+                border-radius: 2px;
+                margin: 4px 0;
+
+                &:hover {
+                  background-color: #ffffff0a;
+                }
+              }
+
+              &.active {
+                max-height: 1000px;
+                transition: max-height 0.5s;
+              }
+            }
+          }
         }
       }
     }

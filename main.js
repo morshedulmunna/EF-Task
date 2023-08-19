@@ -58,3 +58,21 @@ document.addEventListener("click", (event) => {
     searchInput.classList.remove("active");
   }
 });
+
+// Mobile toggle
+const toggleButton = document.getElementById("togglebtn");
+const sidebar = document.querySelector(".mobile_view_sideBar");
+
+toggleButton.addEventListener("click", () => {
+  sidebar.classList.toggle("active_sidebar");
+});
+
+// Toggle Mobile sub-dropdown
+const mainItems = document.querySelectorAll(".main_item");
+const subItems = document.querySelectorAll(".sub-item");
+
+mainItems.forEach((mainItem, index) => {
+  mainItem.addEventListener("click", function () {
+    subItems[index].classList.toggle("active");
+  });
+});

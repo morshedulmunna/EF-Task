@@ -3,8 +3,8 @@
 
   @include respond-to("lg") {
     position: absolute;
-    top: 28%;
-    left: 42%;
+    top: 260px;
+    left: 46%;
     margin-top: -9em; /*set to a negative number 1/2 of your height*/
     margin-left: -15em; /*set to a negative number 1/2 of your width*/
     padding: 24px;
@@ -19,7 +19,7 @@
   }
 
   @include respond-to("xl") {
-    left: 45%;
+    left: 48%;
     min-width: 520px;
   }
 
