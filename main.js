@@ -76,3 +76,15 @@ mainItems.forEach((mainItem, index) => {
     subItems[index].classList.toggle("active");
   });
 });
+
+// Add a click event listener to the document
+document.addEventListener("click", function (event) {
+  const sidebar = document.querySelector(".nav_item_mobile");
+  // Check if the clicked element is not within the sidebar
+  if (!sidebar.contains(event.target)) {
+    // Close the sub-dropdown sidebar by removing the "active" class
+    subItems.forEach((subItem) => {
+      subItem.classList.remove("active");
+    });
+  }
+});

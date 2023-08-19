@@ -1,5 +1,6 @@
 .nav_modal_wrapper {
   display: none;
+  z-index: 40;
 
   @include respond-to("lg") {
     position: absolute;

@@ -96,7 +96,7 @@
           }
 
           .search_Icon {
-            background-color: orange;
+            background-color: rgb(255, 68, 0);
             height: 56px;
             width: 56px;
             border-radius: 50px;
@@ -112,16 +112,18 @@
             top: 2px;
             width: 540px;
             height: 52px;
-            background-color: orange;
+            background-color: rgb(255, 68, 0);
+            color: rgb(255, 255, 255);
             outline: none;
             border: none;
             padding: 1px;
             border-radius: 50px;
             padding: 0 12px;
-            color: rgb(0, 0, 0);
             font-size: 16px;
             transition: all 0.2s;
-
+            &::placeholder {
+              color: white;
+            }
             &.active {
               left: 0%;
               transition: all 0.5s;
